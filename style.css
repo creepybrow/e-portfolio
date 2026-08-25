@@ -39,6 +39,10 @@ section:nth-child(even){
     display: flex;
     justify-content: center;
     font-size: 24px;
+    position: absolute;
+}
+.container{
+    padding:50px 0;
 }
 
 /*NAVIGATION*/
@@ -60,7 +64,7 @@ nav{
 
 .text--purple{
     color:purple;
-    margin-left: 0 0 0 16px;
+    margin-left: 16px;
 }
 .personal__logo{
     font-size: 24px;
@@ -76,6 +80,7 @@ nav{
     max-width: 800px;
     margin:0 auto;
     padding: 0 12px;
+    display: flex;
 }
 
 /*ABOUT ME*/
@@ -169,4 +174,41 @@ nav{
     transform: scale(0);
     transition: all 300ms;
     font-size: 20px;
+}
+
+/*project wrapper*/
+.project__img{
+    width:100%;
+}
+.project__wrapper{
+    box-shadow: 0 20px 80px rgba(0,0,0,0.45);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.project__wrapper:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    background-color: #242424;
+    opacity: 0;
+    transition: 450ms ease;
+    z-index: 2;
+}
+.project:hover .project__wrapper:before{
+    opacity: 0.7;
+}
+.project:hover .project__img{
+    transform:scale(1.07);
+    filter:blur(5px);
+}
+.project__list{
+    padding-top:40px; 
+}
+.section__title{
+    position: absolute;
 }
