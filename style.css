@@ -175,6 +175,10 @@ nav{
 }
 
 /*project wrapper*/
+
+.section__title{
+    text-align: center;
+}
 .project__img{
     width:100%;
 }
