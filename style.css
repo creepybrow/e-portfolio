@@ -64,7 +64,6 @@ nav{
 
 .text--purple{
     color:purple;
-    margin-left: 16px;
 }
 .personal__logo{
     font-size: 24px;
@@ -161,7 +160,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 16px;
 }
 .language__list{
     display: flex;
@@ -210,5 +208,5 @@ nav{
     padding-top:40px; 
 }
 .section__title{
-    position: absolute;
+    margin-bottom: 20px;
 }
