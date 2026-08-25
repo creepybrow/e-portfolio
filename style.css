@@ -1,8 +1,10 @@
 *{
-    background-color: rgb(145, 142, 138);
     padding: 0;
     margin:0;
     box-sizing: border-box;
+}
+body{
+    background-color: rgb(145,142,138);
 }
 h1,h2,h3,h4, h5, h6, span{
     color: #242424;
@@ -39,7 +41,6 @@ section:nth-child(even){
     display: flex;
     justify-content: center;
     font-size: 24px;
-    position: absolute;
 }
 .container{
     padding:50px 0;
@@ -135,6 +136,10 @@ nav{
 
 /*TECH STACK*/
 
+#language .row,
+#projects .row{
+    flex-direction: column;
+}
 .language{
     width:25%;
     display: flex;
